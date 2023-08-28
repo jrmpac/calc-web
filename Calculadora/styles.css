@@ -1,0 +1,61 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    background-color: #00274b;
+    color: rgb(207, 207, 207);
+
+    display: grid;
+
+    place-items: center;
+}
+
+input, button {
+    height: 45px;
+
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+button{    
+    font-weight: 600;
+}
+
+.calculadora{
+    display: grid;
+
+    width: 25%;
+
+    gap: 30px;
+}
+
+.tela-resultado {
+    border: none;
+    border-radius: 10px;
+
+    text-align: end;
+}
+
+.grid-teclado{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 5px;
+}
+
+.grid-teclado > button {
+    height: 30px;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.grid-teclado > .grid-btn-adicionar {
+    grid-row: 4 / 6;
+    grid-column: 4;
+    height: 100%;
+}
+
+.icone-apagar {
+    width: 20px;
+}
